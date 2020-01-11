@@ -7,7 +7,7 @@ import java.util.Map;
  * @author wulling1024
  * @create 2019-04-01  9:53
  */
-public class Solution {
+class SolutionDemo {
 	/**
 	 * 映射关系，最好的处理方式就是map
 	 * 1、先将字符串转化为单个字符，然后一一匹配，得出相应的字符串
@@ -16,9 +16,11 @@ public class Solution {
 	 * @return
 	 */
 	public List<String> letterCombinations(String digits) {
-		List<String> result = new ArrayList<>(); // 结果输出
-		Map<Character,String> markmap = new HashMap<>();  // 将键盘对应的映射关系进行存储
-		markmap.put('1',"");
+//		结果输出
+		List<String> result = new ArrayList<>();
+//		将键盘对应的映射关系进行存储
+		Map<Character,String> markmap = new HashMap<>();
+//		markmap.put('1',"");
 		markmap.put('2',"abc");
 		markmap.put('3',"def");
 		markmap.put('4',"ghi");
@@ -27,20 +29,29 @@ public class Solution {
 		markmap.put('7',"pqrs");
 		markmap.put('8',"tuv");
 		markmap.put('9',"wxyz");
-
-		char[] str = digits.toCharArray(); // 字符串转字符数组
-		List<String> list = new ArrayList<>();  // 将数字对应的字符串进行存储
+// 		字符串转字符数组
+		char[] str = digits.toCharArray();
+		int len = digits.length();
+//		将数字对应的字符串进行存储
+		List<String> list = new ArrayList<>();
 		for(int i = 0 ; i < str.length ; i++){
 			list.add(markmap.get(str[i]));
 		}
-		// 如何进行一个排列组合
+
+//		排列组合的层级是不定的
 		for(int i = 0 ; i < list.get(0).length() ; i++){
 			for(int j = 0 ; j < list.get(1).length() ; j++){
-				//     result.add(list.get(0).toCharArray()[i] + list.get(1).toCharArray()[1]);
+				result.add(String.valueOf(list.get(0).toCharArray()[i]) + String.valueOf(list.get(1).toCharArray()[j]));
 			}
 		}
-
-
 		return result;
+	}
+}
+
+public class Solution{
+	public static void main(String[] args) {
+		String str = "23";
+		SolutionDemo demo = new SolutionDemo();
+		System.out.println(demo.letterCombinations(str));
 	}
 }
