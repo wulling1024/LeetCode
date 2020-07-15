@@ -28,4 +28,7 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+
+### User-defined ###
+/Acmcoder/
 /src/main/resources/rebel.xml
