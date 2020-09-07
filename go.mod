@@ -1,3 +1,3 @@
-module wulling1024.github.io/study/leetcode
+module github.com/wulling1024/Leetcode
 
 go 1.14
