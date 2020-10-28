@@ -28,7 +28,7 @@ func coinChange(coins []int, amount int) int {
 		result[index]++
 	}
 	if result[amount] == math.MaxInt8 {
-		return  -1
+		return -1
 	}
 	return result[amount]
 }
