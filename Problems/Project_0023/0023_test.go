@@ -1,4 +1,4 @@
-package LeetCode
+package main
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func GenerateList(arr []int) *ListNode{
+func GenerateList(arr []int) *ListNode {
 	//var node, result *ListNode
 	node := new(ListNode)
 	result := node
@@ -65,7 +65,7 @@ func merge(lists []*ListNode, start, end int) *ListNode {
 	return merge2List(left, right)
 }
 
-func merge2List(left, right *ListNode) *ListNode{
+func merge2List(left, right *ListNode) *ListNode {
 	if left == nil {
 		return right
 	}
