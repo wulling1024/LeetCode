@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func Test_main() {
 	result := []int{}
 	// 第一行输入
 	n1 := 0

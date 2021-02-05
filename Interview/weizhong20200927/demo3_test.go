@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func Test_main3() {
 	// 输入第一个数值n
 	n := 0
 	fmt.Scan(&n)

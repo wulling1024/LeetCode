@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func main() {
+func Test_main() {
 	// 数组长度
 	n := 0
 	// 查询次数

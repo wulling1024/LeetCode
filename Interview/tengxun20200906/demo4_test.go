@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func main() {
+func Test_main4() {
 
 	// 第一行输入
 	n := 0

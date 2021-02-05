@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func Test_main2() {
 	T:=0
 	fmt.Scan(&T)
 	result := make([]interface{}, T)

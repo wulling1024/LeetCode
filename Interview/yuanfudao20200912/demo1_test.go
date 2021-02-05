@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func Test_main() {
 	N:=0
 	M:=0
 	for {
