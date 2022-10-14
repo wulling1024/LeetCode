@@ -1,3 +1,3 @@
 module github.com/wulling1024/Leetcode
 
-go 1.14
+go 1.18
